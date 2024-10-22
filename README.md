@@ -1,5 +1,5 @@
 # CRUD-app-ProdigalAI-assignment
-###ProdigalAI Internship Assignment
+### ProdigalAI Internship Assignment
 Project name: CRUD Application using MERN Stack
 Poject author: Ajay Kumar 10219011621 USAR AI-ML 4th year
 Github Repo Link: https://github.com/ajju-devs/CRUD-app-ProdigalAI-assignment
