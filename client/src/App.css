@@ -4,6 +4,7 @@
     font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
+    box-sizing: border-box; /* Added for better box model handling */
 }
 
 body {
@@ -49,8 +50,7 @@ body {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
-    bottom: 0;
+    position: relative; /* Changed from fixed to relative */
     width: 100%;
 }
 
@@ -62,4 +62,33 @@ body {
 
 .App-footer a:hover {
     text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .app-title {
+        font-size: 1.5rem; /* Smaller title for mobile */
+    }
+    
+    .app-subtitle {
+        font-size: 1rem; /* Smaller subtitle for mobile */
+    }
+    
+    .project-link {
+        font-size: 0.9rem; /* Smaller link for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .app-title {
+        font-size: 1.2rem; /* Even smaller title for very small devices */
+    }
+    
+    .app-subtitle {
+        font-size: 0.9rem; /* Even smaller subtitle for very small devices */
+    }
+    
+    .project-link {
+        font-size: 0.8rem; /* Even smaller link for very small devices */
+    }
 }
