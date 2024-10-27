@@ -15,6 +15,11 @@ const URL = process.env.MONGOURL;
 app.use(bodyParser.json());
 app.use(cors());
 
+// Root Route
+app.get("/", (req, res) => {
+    res.send("Welcome to the CRUD MERN Application!");
+});
+
 // Define Routes
 app.use("/api", route);
 
