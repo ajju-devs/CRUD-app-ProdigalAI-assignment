@@ -1,29 +1,29 @@
 .userTable {
-    width: 100%; /* Full width to cover the screen */
-    max-width: 800px; /* Maximum width for larger screens */
+    width: 100%; 
+    max-width: 800px; 
     background-color: white;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
     border-radius: 5px;
-    margin: 50px auto; /* Center the table */
+    margin: 50px auto; 
     padding: 20px;
-    box-sizing: border-box; /* Include padding and border in the element's width and height */
-    overflow: hidden; /* Ensure overflow is handled properly */
+    box-sizing: border-box; 
+    overflow: hidden;
 }
 
 .userTable table {
-    width: 100%; /* Table takes the full width */
+    width: 100%; 
     margin-top: 30px;
     border-collapse: collapse;
     box-sizing: border-box;
-    table-layout: fixed; /* Ensure the table layout is fixed */
-    word-wrap: break-word; /* Allow text to wrap inside the cells */
+    table-layout: fixed; 
+    word-wrap: break-word; 
 }
 
 .userTable table thead th,
 .userTable table tbody td {
     padding: 10px;
     text-align: center;
-    word-wrap: break-word; /* Allow text to wrap inside the cells */
+    word-wrap: break-word; 
 }
 
 .userTable table thead th {
@@ -45,11 +45,11 @@
 
 .actionButtons {
     display: flex;
-    justify-content: center; /* Center align the buttons */
-    gap: 15px; /* Increased space between icons */
+    justify-content: center; 
+    gap: 15px; 
 }
 
-/* Make sure icons are clickable */
+
 .actionButtons img {
     cursor: pointer;
 }
@@ -62,7 +62,7 @@
 @media (max-width: 768px) {
     .userTable {
         padding: 15px;
-        width: 100%; /* Ensure the table covers the entire width on smaller screens */
+        width: 100%; 
     }
 
     .addButton {
@@ -78,7 +78,7 @@
 @media (max-width: 480px) {
     .userTable {
         padding: 10px;
-        width: 100%; /* Full width for mobile screens */
+        width: 100%; 
     }
 
     .addButton {
@@ -101,10 +101,10 @@
     }
 }
 
-/* Ensuring overflow handling for small screens */
+
 @media (max-width: 480px) {
     .userTable {
-        overflow-x: auto; /* Allow horizontal scrolling if the content overflows */
+        overflow-x: auto; 
     }
 
     .userTable table {
