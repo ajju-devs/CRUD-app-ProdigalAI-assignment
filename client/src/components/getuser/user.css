@@ -1,5 +1,5 @@
 .userTable {
-    width: 90%; /* Full width on larger screens, but reduced for responsiveness */
+    width: 100%; /* Full width to cover the screen */
     max-width: 800px; /* Maximum width for larger screens */
     background-color: white;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
@@ -7,6 +7,7 @@
     margin: 50px auto; /* Center the table */
     padding: 20px;
     box-sizing: border-box; /* Include padding and border in the element's width and height */
+    overflow: hidden; /* Ensure overflow is handled properly */
 }
 
 .userTable table {
@@ -14,9 +15,11 @@
     margin-top: 30px;
     border-collapse: collapse;
     box-sizing: border-box;
+    table-layout: fixed; /* Ensure the table layout is fixed */
+    word-wrap: break-word; /* Allow text to wrap inside the cells */
 }
 
-.userTable table thead th, 
+.userTable table thead th,
 .userTable table tbody td {
     padding: 10px;
     text-align: center;
@@ -95,5 +98,16 @@
     .actionButtons a {
         padding: 6px;
         font-size: 12px;
+    }
+}
+
+/* Ensuring overflow handling for small screens */
+@media (max-width: 480px) {
+    .userTable {
+        overflow-x: auto; /* Allow horizontal scrolling if the content overflows */
+    }
+
+    .userTable table {
+        width: 100%;
     }
 }
