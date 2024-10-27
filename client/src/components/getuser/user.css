@@ -1,13 +1,14 @@
-.userTable{
-    width: 60%;
+.userTable {
+    width: 90%; /* Changed to a percentage for responsiveness */
+    max-width: 800px; /* Set a maximum width */
     background-color: white;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
     border-radius: 5px;
     margin: 50px auto;
-    padding: 50px;
+    padding: 20px; /* Reduced padding for smaller devices */
 }
 
-.addButton{
+.addButton {
    text-decoration: none;
    background-color: purple;
    color: white;
@@ -15,41 +16,64 @@
    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
    border-radius: 5px;
    padding: 10px;
+   display: inline-block; /* Make the button a block element */
+   margin-bottom: 20px; /* Space below the button */
 }
 
-.userTable table{
+.userTable table {
     width: 100%;
     margin-top: 30px;
     border-collapse: collapse;
-
 }
 
-.userTable table thead th{
+.userTable table thead th {
     background-color: darkblue;
     color: white;
     padding: 10px;
 }
 
-.userTable table tbody td{
+.userTable table tbody td {
     padding: 10px;
     text-align: center;
 }
 
-.actionButtons button{
-    border: 0;
-    outline: none;
-    background: red;
-    padding: 8px 10px;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .userTable {
+        padding: 15px; /* Reduce padding */
+    }
+
+    .addButton {
+        padding: 8px; /* Smaller button padding */
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .userTable table {
+        font-size: 14px; /* Adjust table font size */
+    }
 }
 
-.actionButtons a{
-    background: green;
-    padding: 6px 10px;
-    color: white;
-    border-radius: 5px;
-    margin: 0 10px;
-    text-decoration: none;
+@media (max-width: 480px) {
+    .userTable {
+        padding: 10px; /* Further reduce padding */
+    }
+
+    .addButton {
+        padding: 6px; /* Even smaller button padding */
+        font-size: 12px; /* Adjust font size for mobile */
+    }
+
+    .userTable table {
+        font-size: 12px; /* Smaller font size for mobile */
+    }
+
+    .actionButtons button {
+        padding: 6px; /* Adjust button padding */
+        font-size: 12px; /* Adjust button font size */
+    }
+
+    .actionButtons a {
+        padding: 6px; /* Adjust link padding */
+        font-size: 12px; /* Adjust link font size */
+    }
 }
