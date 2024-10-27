@@ -49,9 +49,9 @@
     cursor: pointer; /* Change cursor to pointer for clickable icons */
 }
 
-/* Specific hover style for delete logo */
+/* Add hover style for delete icon */
 .deleteLogo:hover {
-    cursor: pointer; /* Ensure delete logo changes to pointer */
+    cursor: pointer; /* Ensure the delete logo changes to pointer on hover */
 }
 
 /* Adjust for smaller screens */
