@@ -37,6 +37,18 @@
     text-align: center;
 }
 
+/* Add spacing for action buttons */
+.actionButtons {
+    display: flex;
+    justify-content: center; /* Center align the buttons */
+    gap: 15px; /* Increased space between icons */
+}
+
+/* Change cursor to pointer on hover */
+.actionButtons img {
+    cursor: pointer; /* Change cursor to pointer for clickable icons */
+}
+
 /* Adjust for smaller screens */
 @media (max-width: 768px) {
     .userTable {
@@ -65,12 +77,6 @@
 
     .userTable table {
         font-size: 12px; /* Smaller font size for mobile */
-    }
-
-    .actionButtons {
-        display: flex;
-        justify-content: center; /* Center align the buttons */
-        gap: 10px; /* Add space between the icons */
     }
 
     .actionButtons button {
