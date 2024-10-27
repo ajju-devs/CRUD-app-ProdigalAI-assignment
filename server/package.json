@@ -5,8 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon index.js"
-  },
+  "start": "node index.js", 
+  "build": "cd client && npm install && npm run build"
+}},
   "author": "Ajay Kumar",
   "license": "ISC",
   "dependencies": {
