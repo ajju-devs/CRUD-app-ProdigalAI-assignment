@@ -59,6 +59,7 @@ body {
     padding: 10px 0;
     width: 100%;
     margin-top: auto; /* Push the footer to the bottom */
+    position: relative; /* Ensure it stays below the content */
 }
 
 .App-footer a {
