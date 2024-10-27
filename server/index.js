@@ -22,13 +22,17 @@ app.use("/api", route);
 mongoose.connect(URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true
-}).then(() => {
-    console.log("DB connected successfully");
+})
+    .then(() => {
+        console.log("DB connected successfully");
 
-    app.listen(PORT, () => {
-        console.log(`Server is running on port: ${PORT}`);
+        app.listen(PORT, () => {
+            console.log(`Server is running on port: ${PORT}`);
+        });
+    })
+    .catch((error) => {
+        console.error("Error connecting to DB:", error);
+
+        // Optional: Exit the process if DB connection fails
+        process.exit(1);
     });
-
-}).catch((error) => {
-    console.error("Error connecting to DB:", error);
-});
