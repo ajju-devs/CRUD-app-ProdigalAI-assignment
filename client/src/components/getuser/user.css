@@ -49,6 +49,11 @@
     cursor: pointer; /* Change cursor to pointer for clickable icons */
 }
 
+/* Specific hover style for delete logo */
+.deleteLogo:hover {
+    cursor: pointer; /* Ensure delete logo changes to pointer */
+}
+
 /* Adjust for smaller screens */
 @media (max-width: 768px) {
     .userTable {
