@@ -1,11 +1,31 @@
 .userTable {
-    width: 90%; /* Changed to a percentage for responsiveness */
-    max-width: 800px; /* Set a maximum width */
+    width: 90%; /* Full width on larger screens, but reduced for responsiveness */
+    max-width: 800px; /* Maximum width for larger screens */
     background-color: white;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
     border-radius: 5px;
-    margin: 50px auto;
-    padding: 20px; /* Reduced padding for smaller devices */
+    margin: 50px auto; /* Center the table */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding and border in the element's width and height */
+}
+
+.userTable table {
+    width: 100%; /* Table takes the full width */
+    margin-top: 30px;
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+
+.userTable table thead th, 
+.userTable table tbody td {
+    padding: 10px;
+    text-align: center;
+    word-wrap: break-word; /* Allow text to wrap inside the cells */
+}
+
+.userTable table thead th {
+    background-color: darkblue;
+    color: white;
 }
 
 .addButton {
@@ -16,81 +36,64 @@
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
     border-radius: 5px;
     padding: 10px;
-    display: inline-block; /* Make the button a block element */
-    margin-bottom: 20px; /* Space below the button */
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
-.userTable table {
-    width: 100%;
-    margin-top: 30px;
-    border-collapse: collapse;
-}
-
-.userTable table thead th {
-    background-color: darkblue;
-    color: white;
-    padding: 10px;
-}
-
-.userTable table tbody td {
-    padding: 10px;
-    text-align: center;
-}
-
-/* Add spacing for action buttons */
 .actionButtons {
     display: flex;
     justify-content: center; /* Center align the buttons */
     gap: 15px; /* Increased space between icons */
 }
 
-/* Change cursor to pointer on hover */
+/* Make sure icons are clickable */
 .actionButtons img {
-    cursor: pointer; /* Change cursor to pointer for clickable icons */
+    cursor: pointer;
 }
 
-/* Add hover style for delete icon */
 .deleteLogo:hover {
-    cursor: pointer; /* Ensure the delete logo changes to pointer on hover */
+    cursor: pointer;
 }
 
-/* Adjust for smaller screens */
+/* Responsive adjustments */
 @media (max-width: 768px) {
     .userTable {
-        padding: 15px; /* Reduce padding */
+        padding: 15px;
+        width: 100%; /* Ensure the table covers the entire width on smaller screens */
     }
 
     .addButton {
-        padding: 8px; /* Smaller button padding */
-        font-size: 14px; /* Adjust font size */
+        padding: 8px;
+        font-size: 14px;
     }
 
     .userTable table {
-        font-size: 14px; /* Adjust table font size */
+        font-size: 14px;
     }
 }
 
 @media (max-width: 480px) {
     .userTable {
-        padding: 10px; /* Further reduce padding */
+        padding: 10px;
+        width: 100%; /* Full width for mobile screens */
     }
 
     .addButton {
-        padding: 6px; /* Even smaller button padding */
-        font-size: 12px; /* Adjust font size for mobile */
+        padding: 6px;
+        font-size: 12px;
     }
 
     .userTable table {
-        font-size: 12px; /* Smaller font size for mobile */
+        font-size: 12px;
     }
 
     .actionButtons button {
-        padding: 6px; /* Adjust button padding */
-        font-size: 12px; /* Adjust button font size */
+        padding: 6px;
+        font-size: 12px;
     }
 
     .actionButtons a {
-        padding: 6px; /* Adjust link padding */
-        font-size: 12px; /* Adjust link font size */
+        padding: 6px;
+        font-size: 12px;
     }
 }
