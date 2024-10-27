@@ -1,11 +1,11 @@
 .addUser {
-    width: 90%; /* Change width to make it more responsive */
-    max-width: 400px; /* Set a maximum width */
+    width: 90%; 
+    max-width: 400px; 
     background-color: white;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
     border-radius: 5px;
     margin: 50px auto;
-    padding: 20px; /* Reduced padding for smaller devices */
+    padding: 20px; 
 }
 
 .addUserForm {
@@ -45,22 +45,22 @@
 /* Responsive Styles */
 @media (max-width: 768px) {
     .addUser {
-        margin: 20px; /* Reduce margin for smaller screens */
-        padding: 15px; /* Reduce padding */
+        margin: 20px; 
+        padding: 15px; 
     }
 }
 
 @media (max-width: 480px) {
     .addUser {
-        margin: 10px; /* Even less margin for very small devices */
-        padding: 10px; /* Further reduce padding */
+        margin: 10px; 
+        padding: 10px; 
     }
 
     .addUserForm .inputGroup input {
-        padding: 8px; /* Adjust input padding */
+        padding: 8px; 
     }
 
     .addUserForm .inputGroup button {
-        padding: 12px; /* Adjust button padding */
+        padding: 12px; 
     }
 }
