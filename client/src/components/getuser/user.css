@@ -9,15 +9,15 @@
 }
 
 .addButton {
-   text-decoration: none;
-   background-color: purple;
-   color: white;
-   font-weight: 500;
-   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
-   border-radius: 5px;
-   padding: 10px;
-   display: inline-block; /* Make the button a block element */
-   margin-bottom: 20px; /* Space below the button */
+    text-decoration: none;
+    background-color: purple;
+    color: white;
+    font-weight: 500;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block; /* Make the button a block element */
+    margin-bottom: 20px; /* Space below the button */
 }
 
 .userTable table {
@@ -65,6 +65,12 @@
 
     .userTable table {
         font-size: 12px; /* Smaller font size for mobile */
+    }
+
+    .actionButtons {
+        display: flex;
+        justify-content: center; /* Center align the buttons */
+        gap: 10px; /* Add space between the icons */
     }
 
     .actionButtons button {
